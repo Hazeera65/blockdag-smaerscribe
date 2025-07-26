@@ -41,7 +41,13 @@ Smart contracts are foundational to Web3 — yet many users interact with them w
 ### 📄 Documentation & Sharing
 - Automatically generates structured, downloadable PDF reports  
 - Clean UI with multi-page interface (Analyze, Examples, About, etc.)  
-- MetaMask integration for live interactions and future extensions  
+- MetaMask integration for live interactions and future extensions
+
+  ### 📝 Prompt Input Example	🤖 What SmartScribe Does
+0x... address of a contract	Explains contract behavior, risks, owner privileges
+"Create a token with 1000 supply"	Generates ERC-20 Solidity code
+"Build a time-locked voting system"	Creates voting contract with deadline feature
+"Does this contract allow minting?"	Answers using Groq + contract AST parsing 
 
 ---
 
@@ -57,6 +63,15 @@ Smart contracts are foundational to Web3 — yet many users interact with them w
 | Deployment  | Vercel                                               |
 
 ---
+
+🧠 Prompt Examples
+See full list in prompt_examples.md
+
+Prompt	Generated Code Output
+"Create a simple token with 1000 supply"	✔️ ERC20 contract
+"Build an NFT minting contract"	✔️ ERC721 logic
+"Add time-based voting logic"	✔️ voting.sol
+"Send ETH monthly to an address"	✔️ Recurring payout logic
 
 ## ⚙️ System Architecture
 
@@ -108,6 +123,23 @@ SmartScribe is built not only for developers but also for everyday users. It sim
 - IDE plugin for developer integration  
 
 ---
+🔮 BlockDAG Compatibility (Future Scope)
+We plan to support BlockDAG-based chains such as:
+
+Kaspa
+
+Fantom
+
+Conflux
+
+🚀 Why BlockDAG?
+Massive parallelism
+
+Higher transactions per second (TX/s)
+
+Better scalability
+
+SmartScribe will scale across DAGs, enabling multiple concurrent AI agents to verify or deploy smart contracts in real-time.
 ## Getting Started
 
 ### Prerequisites
